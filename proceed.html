@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,30 +42,31 @@
         </nav>
     </header>
     <div class="ORDer">
-        <form class="order">
-            
+        <form class="order" method="post" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="43fed59b-43a2-4b3e-af45-79b304da3012">
             <div class="A">
                 Enter Name:
-                <input class="Name" type="text">
+                <input class="Name" type="text" name="name" required>
             </div>
             <div class="A">
-                Contact No.
-            <input class="Name" type="tel">
+                Contact No:
+                <input class="Name" type="tel" name="contact" required>
             </div>
             <div class="A">
-                Email:      
-            <input class="Email" type="email">
+                Email:
+                <input class="Email" type="email" name="email" required>
             </div>
             <div class="A">
                 Address:
-            <input class="Address" type="text">
+                <input class="Address" type="text" name="address" required>
             </div>
-           <div class="A">
-            Postal Code:
-            <input class="postalCode" type="number">
-           </div>
-           <button class="submit" onclick=return clear()>Submit Order</button>
+            <div class="A">
+                Postal Code:
+                <input class="postalCode" type="number" name="post" required>
+            </div>
+            <button class="submit" type="submit">Submit Order</button>
         </form>
+        
         
     </div>
 </body>
